@@ -11,7 +11,7 @@ def generate_story(prompt):
         max_tokens=500,
         n = 1,
         stop=None,
-        temperature=0.8,
+        temperature=0.5,
         top_p=1,
         frequency_penalty=0,
         presence_penalty=0
@@ -24,7 +24,7 @@ def main():
     st.title('Story Generator')
 
     # Prompt input
-    prompt = st.text_input('Enter a story prompt or starting sentence:')
+    prompt = st.text_input('Enter a starting sentence:')
 
     if st.button('Generate Story'):
         if prompt:
