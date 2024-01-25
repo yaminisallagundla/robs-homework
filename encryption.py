@@ -4,7 +4,7 @@ from cryptography.fernet import Fernet
 key = Fernet.generate_key()
 cipher_suite = Fernet(key)
 
-data_to_encrypt = b"Aashish Paruvada"
+data_to_encrypt = b"Yamini Sallagundla"
 
 # Encrypting the data
 encrypted_data = cipher_suite.encrypt(data_to_encrypt)
